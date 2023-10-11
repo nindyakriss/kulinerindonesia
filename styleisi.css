@@ -1,0 +1,171 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;1,300&display=swap');
+
+*{
+	font-family: 'Fira', sans-serif;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	scroll-padding-top: 2rem;
+	box-sizing: border-box;
+}
+
+
+/*Variables*/
+:root{
+	--container-color: #B0C4DE;
+	--second-color: #87CEFA;
+	--text-color: #fff;
+	--bg-color: #fff;
+}
+
+::selection{
+	color: var(--bg-color);
+	background: var(--second-color);
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
+img{
+	width: 100%;
+}
+
+section{
+	padding: 3rem 0 2 rem;
+}
+
+.container{
+	max-width: 1068px;
+	margin: auto;
+	width: 100%;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2rem 9%;
+	background-color:  #1E90FF;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+.header.sticky {
+	border-bottom: 0.1rem solid;
+}
+.header .logo {
+	font-size: 3rem;
+	color: #fff;
+	font-weight: 600;
+	cursor: default;
+}
+.header .navbar a {
+	padding-left: 40px;
+	font-size: 20px;
+	color: #fff;
+	margin-left: -20rem;
+	transition: 0,5s;
+	margin-right: 300px;
+}
+.header .navbar a:hover,
+.header .navbar a:active{
+	color: #fff;
+}
+
+/*Home*/
+.home{
+	width: 100%;
+	min-height: 320px;
+	background: #1E90FF 80%;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.home-text{
+	color: var(--bg-color);
+	text-align: center;
+}
+
+.home-title{
+	margin-top: 3rem;
+	font-size: 3.5rem;
+}
+
+.home-subtitle{
+	font-size: 1rem;
+	font-weight: 400;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+
+marquee{
+	position: fixed;
+	margin-top: 108px;
+	padding: 5px;
+	background:  #B0C4DE;
+}
+
+main{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 400px;
+    height: 100x;
+    margin-left: 180px;
+    margin-top: 20px;
+}
+
+/*footer*/
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0.3rem 9%;
+	margin-bottom: 30px;
+	margin-top: 50px;
+	background: var(--container-color);
+}
+
+.footer-text p. {
+	font-size: 1rem;
+	color: #fff;
+}
+
+.footer-iconTop a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.8rem;
+	background: #1E90FF;
+	border-radius: 0.8rem;
+	transition: 0.5s ease;
+	margin-left: 100px;
+}
+
+.footer-iconTop a hover {
+	box-shadow: 0 0 1rem var(--second-color);
+}
+
+.footer-iconTop a i {
+	font-size: 1rem;
+	color: var(--second-bg-color);
+}
